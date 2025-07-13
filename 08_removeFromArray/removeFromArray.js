@@ -1,5 +1,5 @@
-const removeFromArray = function (array, element) {
-  array.indexOf(element);
+const removeFromArray = function (array, ...element) {
+  return array.filter((elem) => !element.includes(elem));
 };
 
 // Do not edit below this line
